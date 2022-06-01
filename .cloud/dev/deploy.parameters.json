@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "eastus2"
+            "value": "northeurope"
         },
         "workspaceName": {
             "value": "mlw-trunkbased-dev"
         },
         "resourceGroupName": {
-            "value": "mlops-trunkbased-dev"
+            "value": "trunck-base-mlops"
         },
         "cpuTrainComputeSize": {
             "value": "STANDARD_D12"
@@ -24,10 +24,10 @@
             "value": 2
         },
         "datasetsResourceGroup": {
-            "value": "Analytics.Aml.Experiments.Sources"
+            "value": "trunck-base-mlops"
         },
         "datasetsAccountName": {
-            "value": "aamldatalake"
+            "value": "ydmlopslake"
         },
         "datasetsFileSystem": {
             "value": "trusted"
