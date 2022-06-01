@@ -1,4 +1,4 @@
-  WORKSPACENAME: mlw-trunkbased-dev
+  WORKSPACENAME: yd-mlops-dev
   RESOURCEGROUPNAME: trunck-base-mlops
   STORAGEACCOUNTNAME: ydmlopslake
   LOCATION: northeurope

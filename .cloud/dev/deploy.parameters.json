@@ -6,7 +6,7 @@
             "value": "northeurope"
         },
         "workspaceName": {
-            "value": "mlw-trunkbased-dev"
+            "value": "yd-mlops-dev"
         },
         "resourceGroupName": {
             "value": "trunck-base-mlops"
