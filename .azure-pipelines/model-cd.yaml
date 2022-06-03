@@ -82,6 +82,8 @@ stages:
   - deployment: model_deployment
     displayName: Model deployment
     environment: amlworkspace_$(env)
+    variables:
+      MODEL_VERSION_TO_DEPLOY: $[ stageDependencies.aml_model_evaluate.evaluate.outputs['compare.winning'] ]
     strategy: 
       runOnce:
         deploy:
@@ -98,7 +100,7 @@ stages:
                 azureServiceConnectionName: $(SERVICECONNECTION)
                 modelName: ${{ variables.modelName }}
                 #modelVersion: $(deployment.deployedVersion)
-                modelVersion: $(dependencies.aml_model_evaluate.outputs['evaluate.jobMetricAssert.winning'])
+                modelVersion: $(MODEL_VERSION_TO_DEPLOY)
                 property: stage
                 value: production
                 exclusive: true
@@ -112,7 +114,7 @@ stages:
                 azureServiceConnectionName: $(SERVICECONNECTION)
                 endpointFile: .aml/endpoints/*/endpoint.yml
                 deploymentFile: deployments/*.yml
-                modelVersion: $(dependencies.aml_model_evaluate.outputs['evaluate.jobMetricAssert.winning'])
+                modelVersion: $(MODEL_VERSION_TO_DEPLOY)
                 workspaceName: $(WORKSPACENAME)
                 resourceGroup: $(RESOURCEGROUPNAME)
                 secretsToKeyVault: true
