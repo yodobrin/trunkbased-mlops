@@ -88,6 +88,6 @@ jobs:
           jobName: ${{ needs.build.outputs.jobName }}
           description: ${DESCRIPTION}
           modelPath: hate-pt-speech
-          modelType: mlflow_model
+          # modelType: mlflow_model
           workspaceName: ${WORKSPACENAME}
           resourceGroup: ${RESOURCEGROUPNAME}

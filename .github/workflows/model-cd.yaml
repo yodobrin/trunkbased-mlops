@@ -3,7 +3,7 @@ name: model-CD
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["model-ct"]
+    workflows: [model-ct]
     branches: [main]
     types:
       - completed
