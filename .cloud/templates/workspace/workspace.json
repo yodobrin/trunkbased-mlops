@@ -19,8 +19,8 @@
             }
         },
         "storageAccountName": {
-            "type": "string",
-            "defaultValue": "[replace(parameters('workspaceName'),'-', '')]",
+            "type": "string",            
+            "defaultValue": "[concat('sa', uniqueString(replace(parameters('workspaceName'),'-', '')))]",
             "metadata": {
                 "description": "Name of the storage account used for the workspace."
             }
