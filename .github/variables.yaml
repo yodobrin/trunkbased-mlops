@@ -1,8 +1,8 @@
-  WORKSPACENAME: yd-mlops-dev-125
+  WORKSPACENAME: yd-mlops-dev-126
   RESOURCEGROUPNAME: trunck-base-mlops
   STORAGEACCOUNTNAME: ydmlopslake
   LOCATION: northeurope
-  KEYVAULTNAME: yd-mlops-dev-125
+  KEYVAULTNAME: yd-mlops-dev-126
   ENVPREFIX: dev
   MODELNAME: hate-pt-speech
   DESCRIPTION: 'A hate detection model for tweets in portuguese'
