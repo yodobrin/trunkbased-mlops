@@ -14,7 +14,7 @@ dependencies:
   - scikit-learn
   - statsmodels
   - pip:
-      - azure-core==1.24.0
+      - azure-core
       - azureml-core
       - azureml-defaults
       - azureml-telemetry
