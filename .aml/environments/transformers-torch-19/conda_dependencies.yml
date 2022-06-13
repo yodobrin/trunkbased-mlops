@@ -6,10 +6,10 @@ dependencies:
   - pip:
       - azure-cli-core==2.33.1
       - azure-core==1.24.0
-      - azureml-core==1.42.0
-      - azureml-defaults==1.42.0
-      - azureml-telemetry==1.42.0
-      - azureml-mlflow==1.42.0
+      - azureml-core
+      - azureml-defaults
+      - azureml-telemetry
+      - azureml-mlflow
       - mlflow-skinny==1.25.0.
       - protobuf~=3.19.0
       - torch==1.9
