@@ -9,3 +9,4 @@ dependencies:
       - transformers
       - torch
       - sklearn
+      - msrest==0.7.0
